@@ -1,1 +1,0 @@
-# bitcoindepicted.github.io
