@@ -4,36 +4,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Bitcoin Depicted</title>
+	<title>Bitcoin Depicted - The Bitcoin protocol illustrated</title>
 	<meta name="description" content="Illustrated Bitcoin">
 	<meta name="author" content="BitcoinDepicted">
-	<!--
-	<link rel="icon" href="/favicon.ico">
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="stylesheet" href="css/styles.css?v=1.0">
-	-->
 
-	<style>
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
-		body { 
-			font-size: 14pt; 
-			font-family: monospace;
-		}
-		div.content { width: 96ex; margin: 0 auto; }
-		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-			font-weight: bold;
-			font-size: 1em;
-			font-weight: bold;
-			margin-top: 1em;
-		}
-	</style>
-
+	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 	<div class="content" id="content">
-		<h1>Bitcoin Depicted</h1> 
-		<p>The Bitcoin protocol illustrated</p>
+
+		<div class="header">
+			<a href="./"><div class="logo"> Bitcoin Depicted </div></a>
+			<p>The Bitcoin protocol illustrated / <a href="./about/index.html">About</a> </p>
+		</div>
+		<div class="navi">
+			<p class="menu">Home / <a href="./address/index.html">Address</a></p>
+		</div>
+		<div class="main">
+
+		<h2>High level overview of the Bitcoin network</h2>
+
+		<img src="./BTC.png" alt="Bitcoin protocol overview">
+
+		<h3>What is Bitcoin</h3>
+
+		<p>Bitcoin is simply a unit of account that is used to express a reward that is granted to a miner that successfully mines a <a href="./block/index.html">block</a> consisting of a number of transactions.</p>
+
+		<h3>Transaction</h3>
+
+		<p>A Bitcoin <a href="./transaction/index.html">transaction</a> (TX) is composed by a wallet and includes a set of inputs (InTX) and outputs (OutTX). The inputs and outputs are linked to Bitcoin addresses. The transaction specifies the amount of Bitcoin sent from the input to output addresses. Each Bitcoin <a href="address/index.html">address</a> is derived from a public key corresponding with a unique private key.</p>
+		<p>A new transaction is sent to the Bitcoin network consisting of nodes. It is verified by the nodes and stored in the mempool where it awaits to be selected by a miner and included into a new block. The block, if successfully mined and verified by the nodes, gets included into the blockchain. Once included, the transfer of Bitcoin specified by the transactions included into the block  is considered final and can not be reverted.</p>
+
+		<h3>Bitcoin ownership</h3>
+
+		<p>The ownership of Bitcoins is proven by executing a <a href="./scrip/index.html">script</a> (a set of instructions) protecting all inputs and outputs of a transaction. The execution of the script, in typical scenario, boils down to verification of a signature created using the private key corresponding with each of the addresses involved in the transaction. This means that ownership of the private key is equal to the ownership of Bitcoin transferred to the address and therefore a proper generation and protection of the private key is essential.</p>
+	</div>
+	<div class="footer">
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></p>
+	</div>
 	</div>
 </body>
 </html>

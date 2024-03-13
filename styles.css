@@ -1,0 +1,63 @@
+/*
+ * BitcoinDepicted.com
+ */
+body {
+	font-size: 14pt;
+	font-family: monospace;
+	background-color: #eee;
+	margin: 0;
+}
+div.content { 
+	width: 96ex; 
+	margin: 0 auto; 
+	border-top: 0.4em solid #FF8000;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 1.5em;
+}
+h1 {
+	font-size: 1.5em;
+}
+a {
+	color: #FF8000;
+	color: #D46C00;
+	font-weight: bold;
+}
+.header {
+	align-items:center;
+	display: flex;
+	justify-content:space-between;
+	margin: 0;
+	padding: 0;
+}
+.header a {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+.header p {
+	margin: 0;
+	padding: 0 0.3em;
+}
+.main, .navi {
+	margin: 0;
+	padding: 0 0.3em;
+}
+.logo {
+	color: #fff;
+	font-size: 1.5em;
+	align-items: center;
+	background-color: #474747;
+	padding: 0.2em 0.3em;
+}
+.footer {
+	padding: 0.3em;
+	border-bottom: 0.4em solid #FF8000;
+}
+.footer p {
+	margin:0;
+	padding 0;
+}

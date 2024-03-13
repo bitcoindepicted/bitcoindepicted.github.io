@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bitcoin Depicted - Address</title>
+	<meta name="description" content="Illustrated Bitcoin">
+	<meta name="author" content="BitcoinDepicted">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<div class="content" id="content">
+
+		<div class="header">
+			<a href="./"><div class="logo"> Bitcoin Depicted </div></a>
+			<p>The Bitcoin protocol illustrated / <a href="../about/index.html">About</a> </p>
+		</div>
+		<div class="navi">
+
+		<p class="menu"><a href="../index.html">Home</a> / Address</p>
+		</div>
+		<div class="main">
+		
+		<h2>Bitcoin address</h2>
+
+		<img src="./BTC_address.png" alt="Bitcoin address derivation">
+
+		<p>The address is derived from a public key represented in uncompressed or compressed SEC format. The public key is double hashed using SHA256 and RIPEMD160 to shorten the key from 65 bytes to 21 bytes including one byte indicating network ID:</p>
+		<ul>
+			<li>0x00 for main network</li>
+			<li>0x5f for test network</li>
+		</ul>	
+		<p>Further on, the check sum over the shortened key is calculated using double SHA256 hash. The first four bytes of the check sum are appended to the shortened key creating the binary address. The address is encoded using Base58Check and includes a prefix which affects the leading symbol of the address (it is "1" for legacy addresses)</p> 
+
+	</div>
+	<div class="footer">
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></p>
+	</div>
+	</div>
+</body>
+</html>
+
